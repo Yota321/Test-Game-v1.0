@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino Runner</title>
-    <link rel="stylesheet" href="style.css">
+    <title>3D Runner Game</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div id="game">
-        <div id="dino"></div>
-        <div id="cactus"></div>
-    </div>
-    <div id="score">Score: <span id="scoreSpan">0</span></div>
+    <div id="score">Score: 0</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
